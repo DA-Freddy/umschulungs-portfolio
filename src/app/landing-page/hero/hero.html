@@ -1,0 +1,10 @@
+<h1>Hallo</h1>
+<p>Das Portfolio wurde von {{ myName }} erstellt! Ich habe schon {{projectService.projectsObj.length}} Projekte gemacht!</p>
+<p>Hiervon sind schon {{projectService.getDoneProjects()}} erledigt</p>
+@if(searchingForJob){
+    <p>Ich suche gerade einen Job</p>
+}
+@else {
+    <p>Ich bin im Job</p>
+}
+

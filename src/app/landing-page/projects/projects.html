@@ -1,0 +1,16 @@
+<h2>Projekte</h2>
+
+<!-- @for(project of projects; track $index){
+    <li>{{$index}} {{project}}</li>
+    } @empty {
+    <li>Wir haben noch keine Projekte</li>
+    } -->
+
+@for(project of projectService.returnProjects(); track project.name){
+<article class="project" [class]="project.finsihed?'finished':'in-work'">
+    <h2>{{project.name}}</h2>
+    <p>Dauer: {{project.duration}} Tage</p>
+    <button><a [routerLink]="['/details', project.id]">{{project.name}}</a></button>
+    
+</article>
+}
