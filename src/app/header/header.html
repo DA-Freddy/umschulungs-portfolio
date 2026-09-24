@@ -1,5 +1,9 @@
-<p>header works!</p>
+<p>{{ 'header.title' | translate:{firstName} }}</p>
 <nav>
     <a routerLink="">Home</a>
     <a routerLink="/imprint">Imprint</a>
+
+     <span>Switch languages at runtime: </span>
+    <button (click)="useLanguage('en')">en</button>
+    <button (click)="useLanguage('de')">de</button>
 </nav>

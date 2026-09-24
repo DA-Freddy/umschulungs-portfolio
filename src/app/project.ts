@@ -5,6 +5,7 @@ export interface Project {
     duration: number;
     languages: string[];
     finsihed: boolean;
-    description: string;
+    descriptionDe: string;
+    descriptionEn: string;
     id: number;
 }

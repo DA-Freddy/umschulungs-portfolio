@@ -11,7 +11,8 @@ export class ProjectService {
         duration: 3,
         languages: ['HTML', 'CSS'],
         finsihed: true,
-        description: 'Dies ist eine Restaruantwebseite',
+        descriptionDe: 'Dies ist eine Restaruantwebseite',
+        descriptionEn : 'This is a restaurant website',
         id: 0,
       },
       {
@@ -21,7 +22,8 @@ export class ProjectService {
         duration: 5,
         languages: ['HTML', 'CSS'],
         finsihed: true,
-        description: 'Dies ist ein Blog',
+        descriptionDe: 'Das ist mein Blog',
+        descriptionEn : 'This is my Blog',
         id: 1,
       },
       {
@@ -31,7 +33,8 @@ export class ProjectService {
         duration: 10,
         languages: ['HTML', 'CSS', 'Typescript'],
         finsihed: false,
-        description: 'Dies ist mein Portfolio',
+        descriptionDe: 'Dies ist eine Restaruantwebseite',
+        descriptionEn : 'Dies ist eine Restaruantwebseite',
         id: 2,
       }
     ]

@@ -1,8 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { ProjectService } from '../../project-service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  imports: [],
+  imports: [TranslatePipe],
   selector: 'app-hero',
   styleUrl: './hero.scss',
   templateUrl: './hero.html',

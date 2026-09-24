@@ -1,0 +1,8 @@
+{
+    "header":{
+        "title": "Das ist {{ firstName }}s Header"
+    },
+    "hero":{
+        "title": "Mein <strong>Portfolio</strong>"
+    }
+}

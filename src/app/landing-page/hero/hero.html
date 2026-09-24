@@ -1,4 +1,4 @@
-<h1>Hallo</h1>
+<h1 [innerHTML]="'hero.title' | translate"></h1>
 <p>Das Portfolio wurde von {{ myName }} erstellt! Ich habe schon {{projectService.projectsObj.length}} Projekte gemacht!</p>
 <p>Hiervon sind schon {{projectService.getDoneProjects()}} erledigt</p>
 @if(searchingForJob){

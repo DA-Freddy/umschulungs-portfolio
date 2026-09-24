@@ -10,6 +10,12 @@
 <article class="project" [class]="project.finsihed?'finished':'in-work'">
     <h2>{{project.name}}</h2>
     <p>Dauer: {{project.duration}} Tage</p>
+    @if (translateService.getCurrentLang() == "de") {
+        <p>{{project.descriptionDe}}</p>
+    } @else {
+        <p>{{project.descriptionEn}}</p>
+    }
+    
     <button><a [routerLink]="['/details', project.id]">{{project.name}}</a></button>
     
 </article>
